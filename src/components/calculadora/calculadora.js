@@ -25,6 +25,6 @@ export default class Calculadora extends React.Component {
   }
 
   // functions
-  //ss
+  //
   //
 }
