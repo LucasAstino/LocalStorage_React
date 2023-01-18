@@ -1,0 +1,28 @@
+.container {
+  background-color: black;
+  color: white;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  padding: 1em;
+}
+
+.teclado {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  font-size: 60px;
+}
+
+.teclado button {
+  margin: 10px;
+  width: 2em;
+  height: 2em;
+  font-size: 30px;
+  border-radius: 50%;
+}

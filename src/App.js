@@ -7,7 +7,7 @@ export default class BASE extends React.Component {
     super(props); //quando for usar props
     this.state = {
       login: true,
-      Darktheme: true
+      Darktheme: true,
     };
   }
 

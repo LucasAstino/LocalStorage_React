@@ -5,7 +5,7 @@ import Header from "./components/header/Header";
 import App from "./App";
 import SubHeader from "./subHeader";
 import Cadastro from "./components/Login/cadastro";
-import Calculadora from "./components/calculadora/calculadora";
+import Calculadora from "./components/calculadora/Calculator";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
