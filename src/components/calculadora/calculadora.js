@@ -43,12 +43,11 @@ export default class Calculadora extends React.Component {
   //   };
   // }
 
-  // render() {
-  //   consolo.log(numero + 5);
-  //   return (
-  //     <>
-  //       <h1>{this.State(num)}</h1>
-  //     </>
-  //   );
-  // }
+  render() {
+    return (
+      <>
+        <h1>{this.State(num)}</h1>
+      </>
+    );
+  }
 }
