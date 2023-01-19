@@ -4,7 +4,9 @@
   margin: auto;
   width: 80%;
   height: 100%;
-  padding: 1em;
+  padding: 2em;
+  max-width: 350px;
+  border-radius: 20px;
 }
 
 .teclado {
@@ -12,17 +14,47 @@
   grid-template-columns: auto auto auto auto;
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.footer button {
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 2em;
+  margin: 0.3em;
+}
+
 .display {
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex; */
+  /* justify-content: flex-end; */
   margin: 10px;
+  text-align: right;
   font-size: 60px;
 }
 
 .teclado button {
-  margin: 10px;
-  width: 2em;
-  height: 2em;
-  font-size: 30px;
-  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 2em;
+  margin: 0.3em;
+}
+
+.orange {
+  background-color: #ff9500;
+  color: white;
+}
+
+.gray {
+  background-color: #505050;
+  color: white;
+}
+
+.teste {
+  width: 5em !important;
 }
