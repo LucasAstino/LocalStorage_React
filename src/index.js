@@ -16,7 +16,7 @@ function thictoc() {
       <Header nav1="home" nav2="contact" nav3="info" nav4="about" />
       <SubHeader />
       <Cadastro />
-      <App />
+      {/* <App /> */}
       <Calculadora />
     </>
   );
