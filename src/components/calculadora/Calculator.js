@@ -41,10 +41,32 @@ export default class Calculator extends React.Component {
         console.log(this.state.num);
         this.setState({ num: parseFloat(resul) });
         break;
+      case "-":
+        var resul = parseFloat(this.state.numOld) - parseFloat(this.state.num);
+        this.setState({ display: this.state.display + this.state.num });
+        console.log(resul);
+        console.log(this.state.num);
+        this.setState({ num: parseFloat(resul) });
+        break;
+      case "x":
+        var resul = parseFloat(this.state.numOld) * parseFloat(this.state.num);
+        this.setState({ display: this.state.display + this.state.num });
+        console.log(resul);
+        console.log(this.state.num);
+        this.setState({ num: parseFloat(resul) });
+        break;
+      case "/":
+        var resul = parseFloat(this.state.numOld) / parseFloat(this.state.num);
+        this.setState({ display: this.state.display + this.state.num });
+        console.log(resul);
+        console.log(this.state.num);
+        this.setState({ num: parseFloat(resul) });
+        break;
     }
   };
   clear = () => {
     this.setState({ num: "0" });
+    this.setState({ display: "0" });
   };
 
   porcentage = () => {
@@ -60,7 +82,9 @@ export default class Calculator extends React.Component {
           <button onClick={() => this.clear()}>AC</button>
           <button>-/+</button>
           <button onClick={() => this.porcentage()}>%</button>
-          <button class="orange">/</button>
+          <button onClick={(e) => this.operation(e)} value={"/"} class="orange">
+            /
+          </button>
           <button onClick={(e) => this.addNum(e)} value={7} class="gray">
             7
           </button>
@@ -70,7 +94,9 @@ export default class Calculator extends React.Component {
           <button onClick={(e) => this.addNum(e)} value={9} class="gray">
             9
           </button>
-          <button class="orange">X</button>
+          <button onClick={(e) => this.operation(e)} value={"x"} class="orange">
+            X
+          </button>
           <button onClick={(e) => this.addNum(e)} value={4} class="gray">
             4
           </button>
@@ -80,7 +106,9 @@ export default class Calculator extends React.Component {
           <button onClick={(e) => this.addNum(e)} value={6} class="gray">
             6
           </button>
-          <button class="orange">-</button>
+          <button onClick={(e) => this.operation(e)} value={"-"} class="orange">
+            -
+          </button>
           <button onClick={(e) => this.addNum(e)} value={1} class="gray">
             1
           </button>
@@ -98,8 +126,8 @@ export default class Calculator extends React.Component {
           <button onClick={(e) => this.addNum(e)} value={0} class="gray teste">
             0
           </button>
-          <button onClick={(e) => this.addNum(e)} value={","} class="gray">
-            ,
+          <button onClick={(e) => this.addNum(e)} value={"."} class="gray">
+            .
           </button>
           <button onClick={() => this.res(this.sign)} class="orange">
             =
