@@ -29,11 +29,20 @@
 }
 
 .display {
-  /* display: flex; */
-  /* justify-content: flex-end; */
+  display: flex;
+  justify-content: flex-end;
   margin: 10px;
   text-align: right;
   font-size: 60px;
+  color: white;
+}
+
+.subDisplay {
+  margin: 10px;
+  text-align: right;
+  font-size: 30px;
+  color: gray;
+  display: block;
 }
 
 .teclado button {
